@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing App</title>
+    <style>
+        .buttons{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        button{
+            padding: 10px 10px;
+            width: 15vh;
+            cursor: pointer;
+            color: #ffffff ;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            border: 3px solid #000;
+            border-radius: 10px;
+        }
+        #btn-1{
+            background-color: red;
+        }
+        #btn-2{
+            background-color: orange;
+        }
+        #btn-3{
+            background-color: blue;
+        }
+        #btn-4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button id="btn-1" onclick="red()">Red</button>
+        <button id="btn-2"onclick="orange()">Orange</button>
+        <button id="btn-3" onclick="blue()">Blue</button>
+        <button id="btn-4" onclick="green()">Green</button>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
