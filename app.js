@@ -1,14 +1,10 @@
 let body = document.querySelector("body")
-function red (){
-    body.style.backgroundColor="red"
-    
+let div = document.querySelector("div")
+const color = ["red", "orange", "yellow", "purple", "blue", "pink",  'white','aqua']
+
+for (i=0; i<color.length; i++){
+    div.innerHTML+=`<button class="btn" style="background-color:${color[i]};" onclick="colorchange(${i})">${color[i]}</button>`
 }
-function orange (){
-    body.style.backgroundColor="orange"
-}
-function blue (){
-    body.style.backgroundColor="blue"
-}
-function green (){
-    body.style.backgroundColor="green"
+function colorchange(i){
+    body.style.backgroundColor= color[i]
 }
